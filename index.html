@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>完美人妻的生存法則 | The Perfect Wife's Protocol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首頁">
+        <span class="brand-mark"></span>
+        <span>TPWP</span>
+      </a>
+      <nav class="top-nav" aria-label="主要導覽">
+        <a href="#funding">籌資</a>
+        <a href="#interactive">角色互動</a>
+        <a href="#budget">行銷預算</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="house">
+            <span class="roof"></span>
+            <span class="window window-a"></span>
+            <span class="window window-b"></span>
+            <span class="door"></span>
+          </div>
+          <div class="pan">
+            <span class="pan-base"></span>
+            <span class="pan-handle"></span>
+          </div>
+          <div class="crosshair crosshair-a"></div>
+          <div class="crosshair crosshair-b"></div>
+          <div class="grid-lines"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="kicker">家庭日常 x 頂尖特務 x 黑色喜劇動作片</p>
+          <h1>完美人妻的生存法則</h1>
+          <p class="english-title">The Perfect Wife's Protocol</p>
+          <p class="logline">
+            前王牌特務克拉拉隱姓埋名成為模範主婦，卻在丈夫公事包裡發現軍事級密碼本。她必須用煎蛋鍋、吸塵器與完美微笑，暗中拆掉一整個跨國殺手集團。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#funding">查看進度</a>
+            <a class="button ghost" href="#interactive">進入角色訊號</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="pitch section-band">
+        <div class="section-heading">
+          <span>Core Contrast</span>
+          <h2>和諧外殼下的致命幾何</h2>
+        </div>
+        <div class="contrast-grid">
+          <article>
+            <span class="shape soft"></span>
+            <h3>完美日常</h3>
+            <p>早餐、插花、接送小孩、社區烤肉派對，一切都像精準排版過的家庭雜誌。</p>
+          </article>
+          <article>
+            <span class="shape sharp"></span>
+            <h3>冷靜反擊</h3>
+            <p>監視器死角、廚房短刀、地下室軍火庫，克拉拉的每個微笑都藏著戰術計算。</p>
+          </article>
+          <article>
+            <span class="shape split"></span>
+            <h3>觀眾參與</h3>
+            <p>用角色文本互動選擇訊號回覆，解鎖角色視角、經典場景與募資回饋。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="funding" class="funding section-band">
+        <div class="funding-panel">
+          <div>
+            <p class="kicker">Production Funding Progress</p>
+            <h2>電影製作籌資進度</h2>
+            <p>此區僅展示目前製作資金進度與用途里程碑。若未來要開放觀眾支持或贊助，需另行建立會員登入、身份驗證、訂單紀錄與第三方金流付費系統。</p>
+          </div>
+          <div class="funding-stats" aria-live="polite">
+            <div>
+              <span>目前募資</span>
+              <strong id="raisedAmount">$0</strong>
+            </div>
+            <div>
+              <span>總目標</span>
+              <strong id="goalAmount">$0</strong>
+            </div>
+            <div>
+              <span>達成率</span>
+              <strong id="fundingPercent">0%</strong>
+            </div>
+          </div>
+          <div class="progress-shell" aria-label="籌資進度">
+            <div class="progress-bar" id="fundingBar"></div>
+          </div>
+          <p class="funding-notice">目前頁面不處理付款、不收集個資，也不提供直接贊助按鈕。</p>
+          <div class="tier-grid" id="milestoneGrid" aria-label="製作資金用途"></div>
+        </div>
+      </section>
+
+      <section id="interactive" class="interactive section-band">
+        <div class="section-heading">
+          <span>Character Text Protocol</span>
+          <h2>角色文本互動</h2>
+        </div>
+        <div class="message-layout">
+          <aside class="character-list" id="characterList" aria-label="選擇角色"></aside>
+          <div class="phone-frame">
+            <div class="phone-top">
+              <span id="activeRole">Clara Jensen</span>
+              <small id="activeStatus">狀態：早餐前 7 分鐘解除危機</small>
+            </div>
+            <div class="message-feed" id="messageFeed" aria-live="polite"></div>
+            <div class="reply-grid" id="replyGrid" aria-label="回覆選項"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="budget" class="budget section-band">
+        <div class="section-heading">
+          <span>Marketing Allocation</span>
+          <h2>行銷預算比例</h2>
+        </div>
+        <div class="budget-layout">
+          <div class="budget-card">
+            <div class="budget-donut" id="budgetDonut" aria-label="行銷預算比例圖"></div>
+            <p class="budget-note">行銷預算佔總募資目標 <strong id="marketingShare">0%</strong>，目前規劃聚焦於社群擴散、預告片素材與觀眾互動活動。</p>
+          </div>
+          <div class="budget-list" id="budgetList"></div>
+        </div>
+      </section>
+
+      <section class="timeline section-band">
+        <div class="section-heading">
+          <span>Three Act Campaign</span>
+          <h2>三幕式行銷節奏</h2>
+        </div>
+        <div class="timeline-grid">
+          <article>
+            <b>第一幕</b>
+            <h3>完美日常破裂</h3>
+            <p>釋出廚房、超市與社區美術照，主打「主婦日常不是主婦日常」。</p>
+          </article>
+          <article>
+            <b>第二幕</b>
+            <h3>圍裙下的雙重生活</h3>
+            <p>用角色訊息、短影片與互動投票，讓觀眾幫克拉拉選擇無聲反擊方式。</p>
+          </article>
+          <article>
+            <b>第三幕</b>
+            <h3>終極反擊</h3>
+            <p>公開動作預演、罐頭工廠概念預告與贊助者限定幕後直播。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 The Perfect Wife's Protocol Campaign</span>
+      <a href="#top">回到頂端</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
